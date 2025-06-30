@@ -41,3 +41,12 @@ deploy:
 
 mint:
 	@forge script script/Interactions.s.sol:MintBasicNft $(NETWORK_ARGS) 
+
+deploy-mood:
+	@forge script script/DeployMoodNft.s.sol:DeployMoodNft $(NETWORK_ARGS)
+
+mint-mood:
+	@forge script script/Interactions.s.sol:MintMoodNft $(NETWORK_ARGS)
+
+flip-mood:
+	@forge script script/Interactions.s.sol:FlipMoodNft $(NETWORK_ARGS)
